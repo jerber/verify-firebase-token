@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "verify-firebase-token"
+version = "0.1.2"
+description = ""
+authors = ["Jeremy Berman <jerber@sas.upenn.edu>"]
+readme = "README.md"
+packages = [{include = "verify_firebase_token"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cryptography = "^41.0"
+requests = "^2.31"
+pyjwt = "^2.8"
+
+[tool.poetry.dev-dependencies]
+ruff = '*'
+mypy = '^1.5'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
